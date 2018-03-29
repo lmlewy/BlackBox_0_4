@@ -30,7 +30,7 @@ namespace SPA5BlackBoxReader
             string errNumber3 = spaMode[6].ToString();
 
             decodedMode.Add("SPA-5 Mode");
-            decodedMode.Add(" ");
+            decodedMode.Add("");
             decodedMode.Add("Mode: " + mode + ", Mod Num 1: " + modNumber1 + ", Err Num 1: " + errNumber1
                                             + ", Mod Num 2: " + modNumber2 + ", Err Num 2: " + errNumber2
                                             + ", Mod Num 3: " + modNumber3 + ", Err Num 3: " + errNumber3 );

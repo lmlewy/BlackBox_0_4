@@ -48,10 +48,10 @@ namespace SPA5BlackBoxReader
                     decodedMessage = str.Decode(message).ToList();
                     break;
 
-                case (byte)Constants.MessageType.MESSTYPE_FILEDESC:
-                    str = GetMessageStrategy(Constants.MessageType.MESSTYPE_FILEDESC);
-                    decodedMessage = str.Decode(message).ToList();
-                    break;
+                //case (byte)Constants.MessageType.MESSTYPE_FILEDESC:
+                //    str = GetMessageStrategy(Constants.MessageType.MESSTYPE_FILEDESC);
+                //    decodedMessage = str.Decode(message).ToList();
+                //    break;
 
                 case (byte)Constants.MessageType.MESSTYPE_EHE2:
                     str = GetMessageStrategy(Constants.MessageType.MESSTYPE_EHE2);
@@ -80,12 +80,12 @@ namespace SPA5BlackBoxReader
                     return new MessageELS95();
                 case Constants.MessageType.MESSTYPE_MODE:
                     return new MessageSpa5Mode();
-                case Constants.MessageType.MESSTYPE_FILEDESC:
-                    return new MessageFileDescr();
+                //case Constants.MessageType.MESSTYPE_FILEDESC:
+                //    return new MessageFileDescr();
                 case Constants.MessageType.MESSTYPE_EHE2:
                     return new MessageEHE2();
                 default:
-                    return new MessageFileDescr();
+                    return new MessageLocation();
 
             }
         }

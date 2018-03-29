@@ -8,7 +8,7 @@ using System.Resources;
 
 namespace SPA5BlackBoxReader
 {
-    class MessageFileDescr : IMessageStrategy
+    class MessageFileDescr
     {
         ResourceManager resmgr = new ResourceManager("SPA5BlackBoxReader.Lang", typeof(Message).Assembly);
         CultureInfo internalCI = null;
@@ -18,17 +18,18 @@ namespace SPA5BlackBoxReader
             internalCI = CultureInfo.DefaultThreadCurrentCulture;
         }
 
-        public List<string> Decode(byte[] file)
+        public string Decode(byte[] file)
         {
-            List<string> decodedFile = new List<string>();
-            decodedFile.Add("File descr.");
+            string decodedFile = null;
+
+            foreach (byte letter in file)
+            {
+                if (letter != 0x00)
+                    decodedFile += (char)letter;
+            }
 
             return decodedFile;
         }
-
-
-
-
 
     }
 }

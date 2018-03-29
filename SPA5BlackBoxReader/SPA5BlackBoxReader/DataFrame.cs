@@ -13,12 +13,12 @@ namespace SPA5BlackBoxReader
         
         private int CRC32;
         ResourceManager resmgr = new ResourceManager("SPA5BlackBoxReader.Lang", typeof(Message).Assembly);// to do usunięcia
-        CultureInfo internalCI = null;// to do usunięcia
+        CultureInfo internalCI = null;
 
         public DataFrame()
         {
             CRC32 = 0;
-            internalCI = CultureInfo.DefaultThreadCurrentCulture; // to do usunięcia
+            internalCI = CultureInfo.DefaultThreadCurrentCulture;
         }
 
         public List<string[]> DecodeDataFrameToList(byte[] frame)
@@ -66,19 +66,36 @@ namespace SPA5BlackBoxReader
                 else if (blkType == 2)
                 {
                     byte[] byteMessage = new byte[blkLenght];
-                    string fileContent = null;
-                    string[] fileCont = new string[6];
+                    string[] fileCont = new string[9];
 
-                    for (int i = 24; i < blkLenght - 4; i++ )
+                    // to jest po staremu - bez klasy - działa
+                    //string fileContent = null;
+                    //for (int i = 24; i < blkLenght - 4; i++ )
+                    //{
+                    //    if (frame[i] != 0x01)
+                    //        fileContent += (char)frame[i] ;
+                    //}
+
+                    //fileCont[0] = timeStamp.ToString(@"yyyy\/MM\/dd HH:mm:ss");
+                    //fileCont[1] = lxNumber.ToString();
+                    //fileCont[2] = lxChannel.ToString();
+                    //fileCont[3] = resmgr.GetString("LabelSoftVer", internalCI);
+                    //fileCont[5] = fileContent;      //tu czegoś brakuje
+
+                    // tu po nowemu
+                    for (int i = 24, j = 0; i < blkLenght - 4; i++, j++ )
                     {
                         if (frame[i] != 0x01)
-                            fileContent += (char)frame[i] ;
+                            byteMessage[j] += frame[i];
                     }
+
+                    MessageFileDescr fileMessage = new MessageFileDescr();
+
                     fileCont[0] = timeStamp.ToString(@"yyyy\/MM\/dd HH:mm:ss");
                     fileCont[1] = lxNumber.ToString();
                     fileCont[2] = lxChannel.ToString();
                     fileCont[3] = resmgr.GetString("LabelSoftVer", internalCI);
-                    fileCont[5] = fileContent;      //tu czegoś brakuje
+                    fileCont[5] = fileMessage.Decode(byteMessage);
 
                     listOfMessages.Add(fileCont);
 

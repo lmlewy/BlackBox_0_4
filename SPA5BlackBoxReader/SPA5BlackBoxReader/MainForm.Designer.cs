@@ -45,6 +45,7 @@
             this.labelInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelAboutProgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPageDecEventTable = new System.Windows.Forms.TabPage();
+            this.comboBoxNumber = new System.Windows.Forms.ComboBox();
             this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.comboBoxGroup = new System.Windows.Forms.ComboBox();
@@ -58,7 +59,6 @@
             this.tabPageBin = new System.Windows.Forms.TabPage();
             this.richTextBoxBin = new System.Windows.Forms.RichTextBox();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.comboBoxNumber = new System.Windows.Forms.ComboBox();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabPageDecEventTable.SuspendLayout();
@@ -209,6 +209,16 @@
             this.tabPageDecEventTable.Text = "tabPageDecEventTable";
             this.tabPageDecEventTable.UseVisualStyleBackColor = true;
             // 
+            // comboBoxNumber
+            // 
+            this.comboBoxNumber.DropDownWidth = 60;
+            this.comboBoxNumber.FormattingEnabled = true;
+            this.comboBoxNumber.Location = new System.Drawing.Point(389, 32);
+            this.comboBoxNumber.Name = "comboBoxNumber";
+            this.comboBoxNumber.Size = new System.Drawing.Size(60, 21);
+            this.comboBoxNumber.TabIndex = 10;
+            this.comboBoxNumber.SelectedValueChanged += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
+            // 
             // dateTimePickerTo
             // 
             this.dateTimePickerTo.Location = new System.Drawing.Point(6, 32);
@@ -318,7 +328,7 @@
             this.tabPageBin.Location = new System.Drawing.Point(4, 22);
             this.tabPageBin.Name = "tabPageBin";
             this.tabPageBin.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBin.Size = new System.Drawing.Size(922, 423);
+            this.tabPageBin.Size = new System.Drawing.Size(951, 423);
             this.tabPageBin.TabIndex = 0;
             this.tabPageBin.Text = "labelBin";
             this.tabPageBin.UseVisualStyleBackColor = true;
@@ -346,15 +356,6 @@
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(959, 449);
             this.tabControl.TabIndex = 2;
-            // 
-            // comboBoxNumber
-            // 
-            this.comboBoxNumber.DropDownWidth = 60;
-            this.comboBoxNumber.FormattingEnabled = true;
-            this.comboBoxNumber.Location = new System.Drawing.Point(389, 32);
-            this.comboBoxNumber.Name = "comboBoxNumber";
-            this.comboBoxNumber.Size = new System.Drawing.Size(60, 21);
-            this.comboBoxNumber.TabIndex = 10;
             // 
             // MainForm
             // 

@@ -78,6 +78,9 @@ namespace SPA5BlackBoxReader
             comboBoxEvAl.Items.Add("*");
             comboBoxEvAl.SelectedText = "*";
 
+            comboBoxNumber.Items.Add("*");
+            comboBoxNumber.SelectedText = "*";
+
             comboBoxMessageText.Items.Add("*");
             comboBoxMessageText.SelectedText = "*";
 
@@ -91,10 +94,10 @@ namespace SPA5BlackBoxReader
             comboBoxGroup.SelectedText = "*";
 
             dateTimePickerFrom.Format = DateTimePickerFormat.Custom;
-            dateTimePickerFrom.CustomFormat = "yyyy/MM/dd hh:mm:ss";
+            dateTimePickerFrom.CustomFormat = "yyyy/MM/dd HH:mm:ss";
 
             dateTimePickerTo.Format = DateTimePickerFormat.Custom;
-            dateTimePickerTo.CustomFormat = "yyyy/MM/dd hh:mm:ss";  
+            dateTimePickerTo.CustomFormat = "yyyy/MM/dd HH:mm:ss";  
 
         }
 
@@ -322,11 +325,19 @@ namespace SPA5BlackBoxReader
             listLxChannel = listLxChannel.Distinct().ToList();
             comboBoxLxChannel.DataSource = listLxChannel;
 
-            List<string> listLxEvAl = new List<string>();
+            //List<string> listLxEvAl = new List<string>();
+            List<string> listLxEvAl = new List<string>(table.Rows.Cast<DataRow>().Select(row => row[resmgr.GetString("labelType", ci)].ToString()));
             listLxEvAl.Insert(0, "*");
-            listLxEvAl.Insert(1, resmgr.GetString("labelAlert", ci));
-            listLxEvAl.Insert(2, resmgr.GetString("labelEvent", ci));
+            //listLxEvAl.Insert(1, resmgr.GetString("labelAlert", ci));
+            //listLxEvAl.Insert(2, resmgr.GetString("labelEvent", ci));
+            listLxEvAl = listLxEvAl.Distinct().ToList();
             comboBoxEvAl.DataSource = listLxEvAl;
+
+            List<string> listNumbers = new List<string>(table.Rows.Cast<DataRow>().Select(row => row[resmgr.GetString("labelNumber", ci)].ToString()));
+            listNumbers = listNumbers.Distinct().ToList();
+            listNumbers.Sort();
+            listNumbers.Insert(0, "*");
+            comboBoxNumber.DataSource = listNumbers;
 
             List<string> listDecodedMessages = new List<string>(table.Rows.Cast<DataRow>().Select(row => row[resmgr.GetString("labelName", ci)].ToString()));
             listDecodedMessages = listDecodedMessages.Distinct().ToList();
@@ -369,7 +380,8 @@ namespace SPA5BlackBoxReader
                 _sqlWhere += " AND " + resmgr.GetString("labelTime", ci) + " <= " + "'" + dateTimePickerTo.Text + "'";
                 if (comboBoxLxNumber.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelLxNumber", ci) + " = '" + comboBoxLxNumber.SelectedItem + "'";
                 if (comboBoxLxChannel.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelChannel", ci) + " = '" + comboBoxLxChannel.SelectedItem + "'";
-                if (comboBoxEvAl.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelNumber", ci) + " LIKE '" + comboBoxEvAl.SelectedItem + "*'";
+                if (comboBoxEvAl.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelType", ci) + " LIKE '" + comboBoxEvAl.SelectedItem + "*'";
+                if (comboBoxNumber.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelNumber", ci) + " = '" + comboBoxNumber.SelectedItem + "'";
                 // tu trzeba coś dołożyć
                 if (comboBoxMessageText.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelName", ci) + " LIKE '%" + comboBoxMessageText.SelectedItem + "%'";
 
@@ -383,7 +395,7 @@ namespace SPA5BlackBoxReader
                 }
                 catch (Exception exc)
                 {
-                    MessageBox.Show("Pusty zbiór");
+                    //MessageBox.Show("Pusty zbiór");
                 }
 
 
