@@ -201,10 +201,6 @@ namespace SPA5BlackBoxReader
             openFileDialog1.CheckFileExists = true;
             iResult = openFileDialog1.ShowDialog();
 
-            //int numberOfFiles = openFileDialog1.FileNames.Length; // to tutaj nie potrzebne
-            //toolStripProgressBar.Maximum = numberOfFiles + 1;
-            //toolStripProgressBar.Value = 0;
-
             if ((iResult != System.Windows.Forms.DialogResult.Cancel) && (openFileDialog1.FileName.Length != 0))
             {
                 filesToRead = openFileDialog1.FileNames;
@@ -215,68 +211,11 @@ namespace SPA5BlackBoxReader
         private void showData(string[] filesToRead)
         {
 
-            //tabControl.SelectTab(tabPageDecEventTable);
-            //List<string[]> decodedFramesList = new List<string[]>();
-
-            ////https://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource.filter(v=vs.110).aspx
-            ////https://msdn.microsoft.com/en-us/library/aa480727.aspx
-            ////https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/bind-data-to-the-datagrid-using-the-designer
-
-            //DataTable table = new DataTable();
-            //table.Columns.Add(resmgr.GetString("labelTime", ci), typeof(string));
-            //table.Columns.Add(resmgr.GetString("labelLxNumber", ci), typeof(string));
-            //table.Columns.Add(resmgr.GetString("labelChannel", ci), typeof(string));
-            //table.Columns.Add(resmgr.GetString("labelNumber", ci), typeof(string));
-            //table.Columns.Add(resmgr.GetString("labelName", ci), typeof(string));
-            //table.Columns.Add(resmgr.GetString("labelStatus", ci), typeof(string));
-            //table.Columns.Add(resmgr.GetString("labelCategory", ci), typeof(string));
-            //table.Columns.Add(resmgr.GetString("labelGroup", ci), typeof(string));
-            ////binding1 = new BindingSource(DataTable table);
-
-            //foreach (String FileName in filesToRead)
-            //{
-            //    byte[] fileBytes = File.ReadAllBytes(@FileName);
-            //    ListOfFrames decodedList = new ListOfFrames();
-            //    decodedFramesList = decodedList.DecodeFileAsList(fileBytes);
-
-            //    foreach (var row in decodedFramesList)
-            //    {
-            //        table.Rows.Add(row);
-            //    }
-
-            //    dataGridViewEventsAndAlarms.DataSource = table;
-            //}
-
-            //DataGridViewColumn column = dataGridViewEventsAndAlarms.Columns[0];
-            //column.Width = 130;
-            ////column.
-            //column = dataGridViewEventsAndAlarms.Columns[1];
-            //column.Width = 60;
-            ////column.HeaderCell = new DataGridViewAutoFilterColumnHeaderCell(column);
-            //column = dataGridViewEventsAndAlarms.Columns[2];
-            //column.Width = 60;
-            //column = dataGridViewEventsAndAlarms.Columns[3];
-            //column.Width = 110;
-            //column = dataGridViewEventsAndAlarms.Columns[4];
-            //column.Width = 200;
-            //column = dataGridViewEventsAndAlarms.Columns[7];
-            //column.Width = 70;
-            ////dataGridViewEventsAndAlarms.Sort(dataGridViewEventsAndAlarms.Columns[1], ListSortDirection.Ascending); to nic nie daje
-
-            //// Do tego miejsca było robione po staremu
-
-
-
-            // od tego miejsca po nowemu
-            // https://msdn.microsoft.com/en-us/library/Aa480727.aspx
-
             tabControl.SelectTab(tabPageDecEventTable);
             List<string[]> decodedFramesList = new List<string[]>();
 
-            //DataTable table = new DataTable();
             table = null;
             table = new DataTable();
-            //table.Clear();
             table.Columns.Add(resmgr.GetString("labelTime", ci), typeof(string)) ;
             table.Columns.Add(resmgr.GetString("labelLxNumber", ci), typeof(string));
             table.Columns.Add(resmgr.GetString("labelChannel", ci), typeof(string));
@@ -291,7 +230,7 @@ namespace SPA5BlackBoxReader
             toolStripProgressBar.Maximum = numberOfFiles;
             toolStripProgressBar.Value = 0;
 
-
+            //https://msdn.microsoft.com/pl-pl/library/system.componentmodel.backgroundworker(v=vs.110).aspx
             foreach (String FileName in filesToRead)
             {
                 byte[] fileBytes = File.ReadAllBytes(@FileName);
@@ -304,32 +243,21 @@ namespace SPA5BlackBoxReader
                 }
                 toolStripProgressBar.Value++;
             }
-            //toolStripProgressBar.Value = 0;
 
-            //dataGridViewEventsAndAlarms.DataSource = table;
             updateDataGridViewEventsAndAlarms(table);
 
-            //https://stackoverflow.com/questions/199642/how-to-insert-empty-field-in-combobox-bound-to-datatable
-
-            //List<KeyValuePair<string, Guid>> list = new List<KeyValuePair<string, Guid>>(table.Rows.Cast<DataRow>().Select(row => new KeyValuePair<string, Guid>(row["Name"].ToString(), (Guid)row["Guid"])));
             List<string> listLxNum = new List<string>(table.Rows.Cast<DataRow>().Select(row => row[resmgr.GetString("labelLxNumber", ci)].ToString()));
-            //list.Insert(0, new KeyValuePair<string, Guid>(string.Empty, Guid.Empty));
             listLxNum.Insert(0, "*");
             listLxNum = listLxNum.Distinct().ToList();
             comboBoxLxNumber.DataSource = listLxNum;
-            //comboBoxLxNumber.ValueMember = "Value";
-            //comboBoxLxNumber.DisplayMember = "Key";
 
             List<string> listLxChannel = new List<string>(table.Rows.Cast<DataRow>().Select(row => row[resmgr.GetString("labelChannel", ci)].ToString()));
             listLxChannel.Insert(0, "*");
             listLxChannel = listLxChannel.Distinct().ToList();
             comboBoxLxChannel.DataSource = listLxChannel;
 
-            //List<string> listLxEvAl = new List<string>();
             List<string> listLxEvAl = new List<string>(table.Rows.Cast<DataRow>().Select(row => row[resmgr.GetString("labelType", ci)].ToString()));
             listLxEvAl.Insert(0, "*");
-            //listLxEvAl.Insert(1, resmgr.GetString("labelAlert", ci));
-            //listLxEvAl.Insert(2, resmgr.GetString("labelEvent", ci));
             listLxEvAl = listLxEvAl.Distinct().ToList();
             comboBoxEvAl.DataSource = listLxEvAl;
 
@@ -345,7 +273,6 @@ namespace SPA5BlackBoxReader
             listDecodedMessages.Insert(0, "*");
             comboBoxMessageText.DataSource = listDecodedMessages;
             
-            //List<string> listStatus = new List<string>(table.Rows.Cast<DataRow>().Select(row => row[resmgr.GetString("labelStatus", ci)].ToString()));
             List<string> listStatus = new List<string>();
             listStatus.Insert(0, "*");
             listStatus.Insert(1, " ");
@@ -362,54 +289,35 @@ namespace SPA5BlackBoxReader
             listGroup.Insert(0, "*");
             listGroup = listGroup.Distinct().ToList();
             comboBoxGroup.DataSource = listGroup;
-
         }
 
         private void comboBoxLxNumber_SelectedValueChanged(object sender, EventArgs e)
         {
             DataTable filteredDataTable = null;
 
-            //if ((comboBoxLxNumber.SelectedItem != "*") && (comboBoxLxChannel.SelectedItem != "*"))
-            //{
+            string _sqlWhere = resmgr.GetString("labelTime", ci) + " >= " + "'" + dateTimePickerFrom.Text + "'";
+            _sqlWhere += " AND " + resmgr.GetString("labelTime", ci) + " <= " + "'" + dateTimePickerTo.Text + "'";
+            
+            if (comboBoxLxNumber.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelLxNumber", ci) + " = '" + comboBoxLxNumber.SelectedItem + "'";
+            if (comboBoxLxChannel.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelChannel", ci) + " = '" + comboBoxLxChannel.SelectedItem + "'";
+            if (comboBoxEvAl.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelType", ci) + " LIKE '" + comboBoxEvAl.SelectedItem + "*'";
+            if (comboBoxNumber.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelNumber", ci) + " = '" + comboBoxNumber.SelectedItem + "'";
+            if (comboBoxMessageText.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelName", ci) + " LIKE '%" + comboBoxMessageText.SelectedItem + "%'";
+            if (comboBoxStatus.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelStatus", ci) + " LIKE '%" + comboBoxStatus.SelectedItem + "%'";
+            if (comboBoxCategory.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelCategory", ci) + " LIKE '%" + comboBoxCategory.SelectedItem + "%'"; //to chyba źle sortuje?
+            if (comboBoxGroup.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelGroup", ci) + " LIKE '%" + comboBoxGroup.SelectedItem + "%'";
 
-                //MessageBox.Show("nie pusty");
-
-                //https://stackoverflow.com/questions/13012585/how-i-can-filter-a-datatable
-                //http://www.csharp-examples.net/dataview-rowfilter/
-                string _sqlWhere = resmgr.GetString("labelTime", ci) + " >= " + "'" + dateTimePickerFrom.Text + "'";
-                _sqlWhere += " AND " + resmgr.GetString("labelTime", ci) + " <= " + "'" + dateTimePickerTo.Text + "'";
-                if (comboBoxLxNumber.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelLxNumber", ci) + " = '" + comboBoxLxNumber.SelectedItem + "'";
-                if (comboBoxLxChannel.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelChannel", ci) + " = '" + comboBoxLxChannel.SelectedItem + "'";
-                if (comboBoxEvAl.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelType", ci) + " LIKE '" + comboBoxEvAl.SelectedItem + "*'";
-                if (comboBoxNumber.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelNumber", ci) + " = '" + comboBoxNumber.SelectedItem + "'";
-                // tu trzeba coś dołożyć
-                if (comboBoxMessageText.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelName", ci) + " LIKE '%" + comboBoxMessageText.SelectedItem + "%'";
-
-                if (comboBoxStatus.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelStatus", ci) + " LIKE '%" + comboBoxStatus.SelectedItem + "%'";
-                if (comboBoxCategory.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelCategory", ci) + " LIKE '%" + comboBoxCategory.SelectedItem + "%'"; //to chyba źle sortuje!!!! znikają rekordy które nie powinny!!!
-                if (comboBoxGroup.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelGroup", ci) + " LIKE '%" + comboBoxGroup.SelectedItem + "%'";
-
-                try
-                {
-                    filteredDataTable = table.Select(_sqlWhere).CopyToDataTable();
-                }
-                catch (Exception exc)
-                {
+            try
+            {
+                filteredDataTable = table.Select(_sqlWhere).CopyToDataTable();
+            }
+            catch (Exception exc)
+            {
                     //MessageBox.Show("Pusty zbiór");
-                }
+            }
 
+            updateDataGridViewEventsAndAlarms(filteredDataTable);
 
-                updateDataGridViewEventsAndAlarms(filteredDataTable);
-
-            //}
-            //else
-            //{
-                //MessageBox.Show("pusty");
-                //updateDataGridViewEventsAndAlarms(table);
-            //}
-
-
-            //updateDataGridViewEventsAndAlarms(filteredDataTable);
         }
 
 
@@ -518,33 +426,6 @@ namespace SPA5BlackBoxReader
                 }
             }
         }
-
-
-
-        // iterator dla combobox
-        //private IEnumerable GetDisplayTable(DataTable tbl)
-        //{
-        //    //yield return new { ObjectLogicalName = string.Empty, guid = Guid.Empty };
-        //    yield return new { ObjectLogicalName = string.Empty};
-
-        //    foreach (DataRow row in tbl.Rows)
-        //        //yield return new { ObjectLogicalName = row["ObjectLogicalName"].ToString(), guid = (Guid)row["guid"] };
-        //        yield return new { ObjectLogicalName = row[resmgr.GetString("labelLxNumber", ci)].ToString() };
-        //}
-
-
-
-        //private void dataGridViewEventsAndAlarms_BindingContextChanged(object sender, EventArgs e)
-        //{
-        //    if (dataGridViewEventsAndAlarms.DataSource == null) return;
-
-        //    foreach (DataGridViewColumn col in dataGridViewEventsAndAlarms.Columns)
-        //    {
-        //        col.HeaderCell = new
-        //            DataGridViewAutoFilterColumnHeaderCell(col.HeaderCell);
-        //    }
-        //    dataGridViewEventsAndAlarms.AutoResizeColumns();
-        //}
 
     }
 }
