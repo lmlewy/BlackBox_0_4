@@ -24,7 +24,7 @@ namespace SPA5BlackBoxReader
         CultureInfo ci = null;
         ResourceManager resmgr = new ResourceManager("SPA5BlackBoxReader.Lang", typeof(MainForm).Assembly);
 
-        private BackgroundWorker binHexBackgroundWorker = null;
+        //private BackgroundWorker binHexBackgroundWorker = null;
         private BackgroundWorker decodeMessagesBackgroundWorker = null;
 
         DataTable table = new DataTable();
@@ -97,7 +97,16 @@ namespace SPA5BlackBoxReader
             dateTimePickerFrom.CustomFormat = "yyyy/MM/dd HH:mm:ss";
 
             dateTimePickerTo.Format = DateTimePickerFormat.Custom;
-            dateTimePickerTo.CustomFormat = "yyyy/MM/dd HH:mm:ss";  
+            dateTimePickerTo.CustomFormat = "yyyy/MM/dd HH:mm:ss";
+
+            decodeMessagesBackgroundWorker = new System.ComponentModel.BackgroundWorker();
+            decodeMessagesBackgroundWorker.WorkerSupportsCancellation = true;
+
+            decodeMessagesBackgroundWorker.DoWork += new DoWorkEventHandler(decodeMessagesBackgroundWorker_DoWork);
+            decodeMessagesBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(decodeMessagesBackgroundWorker_RunWorkerCompleted);
+            decodeMessagesBackgroundWorker.ProgressChanged += new ProgressChangedEventHandler(decodeMessagesBackgroundWorker_ProgressChanged);
+
+
 
         }
 
@@ -125,7 +134,9 @@ namespace SPA5BlackBoxReader
             ci = new CultureInfo("pl-PL");
             CultureInfo.DefaultThreadCurrentCulture = ci;
             updateLabels();
-            if (filesToRead != null) showData(filesToRead);
+            table.Clear();
+            if (filesToRead != null) showData(filesToRead); // to jest bez backgroudworkera i to działa
+                //decodeMessagesBackgroundWorker.RunWorkerAsync(filesToRead);
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,7 +144,9 @@ namespace SPA5BlackBoxReader
             ci = new CultureInfo("en-GB");
             CultureInfo.DefaultThreadCurrentCulture = ci;
             updateLabels();
-            if (filesToRead != null) showData(filesToRead);
+            table.Clear();
+            if (filesToRead != null) showData(filesToRead); // to jest bez backgroudworkera i to działa
+                //decodeMessagesBackgroundWorker.RunWorkerAsync(filesToRead);
         }
 
 
@@ -172,15 +185,17 @@ namespace SPA5BlackBoxReader
 
         private void labelStopToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if ((null != binHexBackgroundWorker) && binHexBackgroundWorker.IsBusy)
-            {
-                binHexBackgroundWorker.CancelAsync();
-            }
+            //if ((null != binHexBackgroundWorker) && binHexBackgroundWorker.IsBusy)
+            //{
+            //    binHexBackgroundWorker.CancelAsync();
+            //}
 
-            if ((null != decodeMessagesBackgroundWorker) && decodeMessagesBackgroundWorker.IsBusy)
-            {
-                decodeMessagesBackgroundWorker.CancelAsync();
-            }
+            //if ((null != decodeMessagesBackgroundWorker) && decodeMessagesBackgroundWorker.IsBusy)
+            //{
+            //    decodeMessagesBackgroundWorker.CancelAsync();
+            //}
+            decodeMessagesBackgroundWorker.CancelAsync();
+
         }
 
 
@@ -212,7 +227,7 @@ namespace SPA5BlackBoxReader
         {
 
             tabControl.SelectTab(tabPageDecEventTable);
-            List<string[]> decodedFramesList = new List<string[]>();
+            List<string[]> decodedFramesList = new List<string[]>(); // to było potrzebne dla wersji bez backgroundworkera
 
             table = null;
             table = new DataTable();
@@ -230,29 +245,48 @@ namespace SPA5BlackBoxReader
             toolStripProgressBar.Maximum = numberOfFiles;
             toolStripProgressBar.Value = 0;
 
-            //https://msdn.microsoft.com/pl-pl/library/system.componentmodel.backgroundworker(v=vs.110).aspx
+            // to było po staremu i to działa
             foreach (String FileName in filesToRead)
             {
                 byte[] fileBytes = File.ReadAllBytes(@FileName);
                 ListOfFrames decodedList = new ListOfFrames();
                 decodedFramesList = decodedList.DecodeFileAsList(fileBytes);
-
+            
                 foreach (var row in decodedFramesList)
                 {
                     table.Rows.Add(row);
                 }
-                toolStripProgressBar.Value++;
+               toolStripProgressBar.Value++;
             }
-
+            //Thread.Sleep(50);
             updateDataGridViewEventsAndAlarms(table);
+            //toolStripProgressBar.Value = 0;
 
+            // to jest z backgroundworkerem
+            //https://msdn.microsoft.com/pl-pl/library/system.componentmodel.backgroundworker(v=vs.110).aspx
+            //https://stackoverflow.com/questions/3127838/fill-datagridview-thanks-to-backgroundworker
+            //decodeMessagesBackgroundWorker.RunWorkerAsync(filesToRead);
+
+            //updateDataGridViewEventsAndAlarms(table);
+
+            updateComboBoxes();
+
+
+
+        }
+
+        private void updateComboBoxes()
+        {
             List<string> listLxNum = new List<string>(table.Rows.Cast<DataRow>().Select(row => row[resmgr.GetString("labelLxNumber", ci)].ToString()));
             listLxNum.Insert(0, "*");
             listLxNum = listLxNum.Distinct().ToList();
             comboBoxLxNumber.DataSource = listLxNum;
 
             List<string> listLxChannel = new List<string>(table.Rows.Cast<DataRow>().Select(row => row[resmgr.GetString("labelChannel", ci)].ToString()));
+            //List<string> listLxChannel = new List<string>();
             listLxChannel.Insert(0, "*");
+            //listLxChannel.Insert(1, "A");
+            //listLxChannel.Insert(2, "B");
             listLxChannel = listLxChannel.Distinct().ToList();
             comboBoxLxChannel.DataSource = listLxChannel;
 
@@ -272,7 +306,7 @@ namespace SPA5BlackBoxReader
             listDecodedMessages.Sort();
             listDecodedMessages.Insert(0, "*");
             comboBoxMessageText.DataSource = listDecodedMessages;
-            
+
             List<string> listStatus = new List<string>();
             listStatus.Insert(0, "*");
             listStatus.Insert(1, " ");
@@ -290,6 +324,7 @@ namespace SPA5BlackBoxReader
             listGroup = listGroup.Distinct().ToList();
             comboBoxGroup.DataSource = listGroup;
         }
+
 
         private void comboBoxLxNumber_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -426,6 +461,84 @@ namespace SPA5BlackBoxReader
                 }
             }
         }
+
+
+
+
+
+
+        private void decodeMessagesBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            List<string[]> decodedFramesList = new List<string[]>();
+
+            // Get the BackgroundWorker that raised this event.
+            BackgroundWorker worker = sender as BackgroundWorker;
+
+            // Assign the result of the computation
+            // to the Result property of the DoWorkEventArgs
+            // object. This is will be available to the 
+            // RunWorkerCompleted eventhandler.
+            //e.Result = ComputeFibonacci((int)e.Argument, worker, e);
+
+            foreach (String FileName in filesToRead)
+            {
+                byte[] fileBytes = File.ReadAllBytes(@FileName);
+                ListOfFrames decodedList = new ListOfFrames();
+                decodedFramesList = decodedList.DecodeFileAsList(fileBytes);
+
+
+            
+                foreach (var row in decodedFramesList)
+                {
+
+
+                    if (decodeMessagesBackgroundWorker.CancellationPending == true)
+                    {
+                        e.Cancel = true;
+                        return; // abort work, if it's cancelled
+                    }
+
+
+
+                    table.Rows.Add(row);
+                }
+            }
+
+        }
+
+
+        private void decodeMessagesBackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            
+            if (e.Error != null)
+            {
+                // First, handle the case where an exception was thrown.
+                MessageBox.Show(e.Error.Message);
+            }
+            else if (e.Cancelled)
+            {
+                // Next, handle the case where the user canceled the operation.
+                // Note that due to a race condition in the DoWork event handler, the Cancelled
+                // flag may not have been set, even though CancelAsync was called.
+                updateDataGridViewEventsAndAlarms(table);
+                updateComboBoxes();
+            }
+            else
+            {
+                // Finally, handle the case where the operation succeeded.
+                updateDataGridViewEventsAndAlarms(table);
+                updateComboBoxes();
+            }
+
+        }
+
+        private void decodeMessagesBackgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            this.toolStripProgressBar.Value = e.ProgressPercentage;
+            //updateDataGridViewEventsAndAlarms(table);
+        }
+
+
 
     }
 }

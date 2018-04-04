@@ -26,6 +26,9 @@ namespace SPA5BlackBoxReader
             string WDStatus = elsDiagnostics[1].ToString();
             string F1Level = elsDiagnostics[2].ToString();
             string F2Level = elsDiagnostics[3].ToString();
+            string statusA = null;
+            string statusM = null;
+            string STS = null;
 
             decodedElsDiagnostics.Add("ELS-95 Diagn.");
             decodedElsDiagnostics.Add(WDNumber);
@@ -34,8 +37,6 @@ namespace SPA5BlackBoxReader
 
             return decodedElsDiagnostics;
         }
-
-
 
 
     }

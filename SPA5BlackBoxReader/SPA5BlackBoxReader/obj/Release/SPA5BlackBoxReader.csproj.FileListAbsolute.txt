@@ -37,3 +37,4 @@ C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_4\SPA5BlackBoxReader\SPA
 C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_4\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.Lang.pl-PL.resources
 C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_4\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.csproj.GenerateResource.Cache
 C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_4\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\pl-PL\SPA5BlackBoxReader.resources.dll
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_4\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.csprojResolveAssemblyReference.cache

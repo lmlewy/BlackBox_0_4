@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -142,7 +143,7 @@
             // 
             this.polskiToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("polskiToolStripMenuItem.Image")));
             this.polskiToolStripMenuItem.Name = "polskiToolStripMenuItem";
-            this.polskiToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.polskiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.polskiToolStripMenuItem.Text = "Polski";
             this.polskiToolStripMenuItem.Click += new System.EventHandler(this.polskiToolStripMenuItem_Click);
             // 
@@ -150,7 +151,7 @@
             // 
             this.englishToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("englishToolStripMenuItem.Image")));
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
@@ -217,7 +218,7 @@
             this.comboBoxNumber.Name = "comboBoxNumber";
             this.comboBoxNumber.Size = new System.Drawing.Size(60, 21);
             this.comboBoxNumber.TabIndex = 10;
-            this.comboBoxNumber.SelectedValueChanged += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
+            this.comboBoxNumber.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
             // 
             // dateTimePickerTo
             // 
@@ -249,7 +250,7 @@
             this.comboBoxGroup.Name = "comboBoxGroup";
             this.comboBoxGroup.Size = new System.Drawing.Size(69, 21);
             this.comboBoxGroup.TabIndex = 7;
-            this.comboBoxGroup.SelectedValueChanged += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
+            this.comboBoxGroup.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
             // 
             // comboBoxCategory
             // 
@@ -259,7 +260,7 @@
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(110, 21);
             this.comboBoxCategory.TabIndex = 6;
-            this.comboBoxCategory.SelectedValueChanged += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
+            this.comboBoxCategory.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
             // 
             // comboBoxStatus
             // 
@@ -269,7 +270,7 @@
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(109, 21);
             this.comboBoxStatus.TabIndex = 5;
-            this.comboBoxStatus.SelectedValueChanged += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
+            this.comboBoxStatus.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
             // 
             // comboBoxMessageText
             // 
@@ -279,7 +280,7 @@
             this.comboBoxMessageText.Name = "comboBoxMessageText";
             this.comboBoxMessageText.Size = new System.Drawing.Size(199, 21);
             this.comboBoxMessageText.TabIndex = 4;
-            this.comboBoxMessageText.SelectedValueChanged += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
+            this.comboBoxMessageText.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
             // 
             // comboBoxEvAl
             // 
@@ -289,7 +290,7 @@
             this.comboBoxEvAl.Name = "comboBoxEvAl";
             this.comboBoxEvAl.Size = new System.Drawing.Size(90, 21);
             this.comboBoxEvAl.TabIndex = 3;
-            this.comboBoxEvAl.SelectedValueChanged += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
+            this.comboBoxEvAl.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
             // 
             // comboBoxLxChannel
             // 
@@ -299,7 +300,7 @@
             this.comboBoxLxChannel.Name = "comboBoxLxChannel";
             this.comboBoxLxChannel.Size = new System.Drawing.Size(60, 21);
             this.comboBoxLxChannel.TabIndex = 2;
-            this.comboBoxLxChannel.SelectedValueChanged += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
+            this.comboBoxLxChannel.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
             // 
             // comboBoxLxNumber
             // 
@@ -308,16 +309,26 @@
             this.comboBoxLxNumber.Name = "comboBoxLxNumber";
             this.comboBoxLxNumber.Size = new System.Drawing.Size(60, 21);
             this.comboBoxLxNumber.TabIndex = 1;
-            this.comboBoxLxNumber.SelectedValueChanged += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
+            this.comboBoxLxNumber.SelectionChangeCommitted += new System.EventHandler(this.comboBoxLxNumber_SelectedValueChanged);
             // 
             // dataGridViewEventsAndAlarms
             // 
             this.dataGridViewEventsAndAlarms.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewEventsAndAlarms.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dataGridViewEventsAndAlarms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewEventsAndAlarms.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewEventsAndAlarms.Location = new System.Drawing.Point(6, 57);
             this.dataGridViewEventsAndAlarms.Name = "dataGridViewEventsAndAlarms";
+            this.dataGridViewEventsAndAlarms.RowTemplate.Height = 30;
             this.dataGridViewEventsAndAlarms.Size = new System.Drawing.Size(939, 333);
             this.dataGridViewEventsAndAlarms.TabIndex = 0;
             this.dataGridViewEventsAndAlarms.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridViewEventsAndAlarms_DataBindingComplete);
