@@ -1281,4 +1281,109 @@
   <data name="labelType" xml:space="preserve">
     <value>Typ</value>
   </data>
+  <data name="EheErrNr1" xml:space="preserve">
+    <value>Błąd Nr 1</value>
+  </data>
+  <data name="EheErrNr2" xml:space="preserve">
+    <value>Błąd Nr 2</value>
+  </data>
+  <data name="EheErrNr3" xml:space="preserve">
+    <value>Błąd Nr 3</value>
+  </data>
+  <data name="EheErrNr4" xml:space="preserve">
+    <value>Błąd Nr 4</value>
+  </data>
+  <data name="EheFs1" xml:space="preserve">
+    <value>Zmierzona FS1</value>
+  </data>
+  <data name="EheFs1Sample" xml:space="preserve">
+    <value>Znamionowa FS1</value>
+  </data>
+  <data name="EheFs2" xml:space="preserve">
+    <value>Zmierzona FS2</value>
+  </data>
+  <data name="EheFs2Sample" xml:space="preserve">
+    <value>Znamionowa FS2</value>
+  </data>
+  <data name="EheFs3" xml:space="preserve">
+    <value>Zmierzona FS3</value>
+  </data>
+  <data name="EheFs3Sample" xml:space="preserve">
+    <value>Znamionowa FS3</value>
+  </data>
+  <data name="EheILed" xml:space="preserve">
+    <value>Prąd Led</value>
+  </data>
+  <data name="EhePDM" xml:space="preserve">
+    <value>Wersja PDM</value>
+  </data>
+  <data name="EheTemp" xml:space="preserve">
+    <value>Temperatura</value>
+  </data>
+  <data name="EheULed" xml:space="preserve">
+    <value>Napięcie Led</value>
+  </data>
+  <data name="EheZpr" xml:space="preserve">
+    <value>Napięcie zasilania</value>
+  </data>
+  <data name="WDDiagn" xml:space="preserve">
+    <value>ELS-95 Diagn.</value>
+  </data>
+  <data name="WDErrorAdc" xml:space="preserve">
+    <value>Błąd przetwornika ADC</value>
+  </data>
+  <data name="WDErrorAdjust" xml:space="preserve">
+    <value>Błąd adjustacji</value>
+  </data>
+  <data name="WDErrorAutoTest" xml:space="preserve">
+    <value>Błąd auto-testu</value>
+  </data>
+  <data name="WDErrorDisturbance" xml:space="preserve">
+    <value>Błąd pomiaru</value>
+  </data>
+  <data name="WDErrorLevel" xml:space="preserve">
+    <value>Błąd poziomu sygnału z głowicy</value>
+  </data>
+  <data name="WDErrorSequence" xml:space="preserve">
+    <value>Błąd sekwencji</value>
+  </data>
+  <data name="WDF1Level" xml:space="preserve">
+    <value>Poziom F1</value>
+  </data>
+  <data name="WDF2Level" xml:space="preserve">
+    <value>Poziom F2</value>
+  </data>
+  <data name="WDStatus" xml:space="preserve">
+    <value>Stan czujnika koła</value>
+  </data>
+  <data name="WDStatusHWFault" xml:space="preserve">
+    <value>Usterka sprzętowa</value>
+  </data>
+  <data name="WDStatusNoFault" xml:space="preserve">
+    <value>Brak usterek</value>
+  </data>
+  <data name="WDStatusNotRecogn" xml:space="preserve">
+    <value>Nieznana usterka</value>
+  </data>
+  <data name="WDStatusTransFault" xml:space="preserve">
+    <value>Usterka transmisji</value>
+  </data>
+  <data name="WDStsCriticalErrHwSw" xml:space="preserve">
+    <value>usterka krytyczna sprzętu lub oprogramowania</value>
+  </data>
+  <data name="WDStsCriticalError" xml:space="preserve">
+    <value>Usterka krytyczna-dwie osie różnicy między kanałami A/M (BKP)</value>
+  </data>
+  <data name="WDStsHeadOccupied" xml:space="preserve">
+    <value>Głowica czujnika jest zajęta (BP)</value>
+  </data>
+  <data name="WDStsMode" xml:space="preserve">
+    <value>Tryb pracy elektroniki przytorowej Init (TI)</value>
+  </data>
+  <data name="WDStsOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="WDStsSendingPermition" xml:space="preserve">
+    <value>Zezwolenia na nadawanie rozkazów z PLC (ZAP)</value>
+  </data>
 </root>

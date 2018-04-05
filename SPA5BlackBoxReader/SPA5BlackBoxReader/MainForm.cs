@@ -333,14 +333,14 @@ namespace SPA5BlackBoxReader
             string _sqlWhere = resmgr.GetString("labelTime", ci) + " >= " + "'" + dateTimePickerFrom.Text + "'";
             _sqlWhere += " AND " + resmgr.GetString("labelTime", ci) + " <= " + "'" + dateTimePickerTo.Text + "'";
             
-            if (comboBoxLxNumber.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelLxNumber", ci) + " = '" + comboBoxLxNumber.SelectedItem + "'";
-            if (comboBoxLxChannel.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelChannel", ci) + " = '" + comboBoxLxChannel.SelectedItem + "'";
-            if (comboBoxEvAl.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelType", ci) + " LIKE '" + comboBoxEvAl.SelectedItem + "*'";
-            if (comboBoxNumber.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelNumber", ci) + " = '" + comboBoxNumber.SelectedItem + "'";
-            if (comboBoxMessageText.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelName", ci) + " LIKE '%" + comboBoxMessageText.SelectedItem + "%'";
-            if (comboBoxStatus.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelStatus", ci) + " LIKE '%" + comboBoxStatus.SelectedItem + "%'";
-            if (comboBoxCategory.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelCategory", ci) + " LIKE '%" + comboBoxCategory.SelectedItem + "%'"; //to chyba źle sortuje?
-            if (comboBoxGroup.SelectedItem != "*") _sqlWhere += " AND " + resmgr.GetString("labelGroup", ci) + " LIKE '%" + comboBoxGroup.SelectedItem + "%'";
+            if (comboBoxLxNumber.SelectedItem.ToString() != "*") _sqlWhere += " AND " + resmgr.GetString("labelLxNumber", ci) + " = '" + comboBoxLxNumber.SelectedItem + "'";
+            if (comboBoxLxChannel.SelectedItem.ToString() != "*") _sqlWhere += " AND " + resmgr.GetString("labelChannel", ci) + " = '" + comboBoxLxChannel.SelectedItem + "'";
+            if (comboBoxEvAl.SelectedItem.ToString() != "*") _sqlWhere += " AND " + resmgr.GetString("labelType", ci) + " LIKE '" + comboBoxEvAl.SelectedItem + "*'";
+            if (comboBoxNumber.SelectedItem.ToString() != "*") _sqlWhere += " AND " + resmgr.GetString("labelNumber", ci) + " = '" + comboBoxNumber.SelectedItem + "'";
+            if (comboBoxMessageText.SelectedItem.ToString() != "*") _sqlWhere += " AND " + resmgr.GetString("labelName", ci) + " LIKE '%" + comboBoxMessageText.SelectedItem + "%'";
+            if (comboBoxStatus.SelectedItem.ToString() != "*") _sqlWhere += " AND " + resmgr.GetString("labelStatus", ci) + " LIKE '%" + comboBoxStatus.SelectedItem + "%'";
+            if (comboBoxCategory.SelectedItem.ToString() != "*") _sqlWhere += " AND " + resmgr.GetString("labelCategory", ci) + " LIKE '%" + comboBoxCategory.SelectedItem + "%'"; //to chyba źle sortuje?
+            if (comboBoxGroup.SelectedItem.ToString() != "*") _sqlWhere += " AND " + resmgr.GetString("labelGroup", ci) + " LIKE '%" + comboBoxGroup.SelectedItem + "%'";
 
             try
             {
@@ -401,23 +401,36 @@ namespace SPA5BlackBoxReader
 
             saveFileDialog1.FileName = "unknown.csv"; // jako csv
             string filter = "CSV file (*.csv)|*.csv| All Files (*.*)|*.*";
-            //saveFileDialog1.Filter = filter;
-            //const string header = "Animal_Name,Hair,Feathers,Eggs,Milk,Airborne,Aquatic,Predator,Toothed,Backbone,Breathes,Venomous,Fins,Legs,Tail,Domestic,Catsize,Type";
-            //StreamWriter writer = null;
+            saveFileDialog1.Filter = filter;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                using (StreamWriter sw = new StreamWriter(saveFileDialog1.FileName))
+                {
+                    foreach(DataRow row in table.Rows)
+                    {
+                        //sw.WriteLine(row.ToString() );
+
+                        string linia = null;
+                        foreach (object item in row.ItemArray)
+                        {
+                            //linia += item.ToString() + ";"; // to działa ale entery tworza nową linię w excelu
+                            
+                            //if (item.ToString(). )
+                            //{
+                            //}
+
+                            //linia += item.ToString().Replace("\r\n", "  ") + ";"; //\r\n=CR LF - to nie działa tak jak powinno
+                            linia += item.ToString().Replace(";", " ") + ";"; // to nie działa tak jak powinno
+
+                        }
+                        sw.WriteLine(linia);
+                    }
 
 
-            //if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-            //{
-            //    using (StreamWriter sw = new StreamWriter(saveFileDialog1.FileName))
-            //    {
-
-            //        filter = saveFileDialog1.FileName;
-            //        writer = new StreamWriter(filter);
-            //        writer.WriteLine(header);
-            //        writer.Close();
-
-            //    }
-            //}
+                    sw.Close();
+                }
+            }
 
 
         }

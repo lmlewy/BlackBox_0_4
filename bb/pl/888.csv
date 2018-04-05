@@ -1,0 +1,592 @@
+2018/03/20 09:24:27;0;A;Wersja oprogramowania;;M2018/0332#00;;;;
+2018/03/20 09:40:58;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 09:40:58;0;A;SPA-5 Mode;;Mode: 2-Diag ;;;;
+2018/03/20 09:44:14;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 09:44:14;0;A;ELS-95 Diagn.;1;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 09:44:14;0;A;ELS-95 Diagn.;2;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 09:44:14;0;A;ELS-95 Diagn.;3;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 09:44:14;0;A;ELS-95 Diagn.;4;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 09:45:04;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 09:45:04;0;A;Alarm;51;Amber road signals hardware failure;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 09:45:04;0;A;Alarm;60;Not Recognized event;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 09:45:05;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 09:45:05;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 09:45:06;0;A;Alarm;7;Usterka modułu EOD;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 09:45:06;0;A;Alarm;14;Rezerwa;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 10:00:24;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 10:00:24;0;A;ELS-95 Diagn.;1;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 10:00:24;0;A;ELS-95 Diagn.;2;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 10:00:24;0;A;ELS-95 Diagn.;3;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 10:00:24;0;A;ELS-95 Diagn.;4;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 10:05:30;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 10:05:30;0;A;ELS-95 Diagn.;1;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 10:05:30;0;A;ELS-95 Diagn.;2;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 10:05:30;0;A;ELS-95 Diagn.;3;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 10:05:30;0;A;ELS-95 Diagn.;4;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 10:06:19;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 10:06:19;0;A;Alarm;51;Amber road signals hardware failure;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 10:06:19;0;A;Alarm;60;Not Recognized event;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 10:06:20;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 10:06:20;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 10:06:21;0;A;Alarm;7;Usterka modułu EOD;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 10:06:21;0;A;Alarm;14;Rezerwa;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 10:06:37;0;A;Alarm;7;Usterka modułu EOD;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/20 10:06:37;0;A;Alarm;14;Rezerwa;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/20 10:07:33;0;A;Alarm;51;Amber road signals hardware failure;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/20 10:13:53;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/20 10:14:01;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/20 10:14:22;0;A;Alarm;60;Not Recognized event;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/20 10:20:17;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 10:20:17;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 14:51:24;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 14:52:00;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 14:52:00;0;A;Alarm;51;Amber road signals hardware failure;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 14:52:00;0;A;Alarm;61;Not Recognized event;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 14:52:02;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 14:52:02;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 14:57:45;0;A;Alarm;61;Not Recognized event;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/20 14:57:55;0;A;Alarm;51;Amber road signals hardware failure;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/20 15:00:11;0;A;ELS-95 Diagn.;1;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 15:00:11;0;A;ELS-95 Diagn.;2;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 15:00:11;0;A;ELS-95 Diagn.;3;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 15:00:11;0;A;ELS-95 Diagn.;4;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/20 15:00:11;0;A;Wersja oprogramowania;;M2018/0332#00;;;;
+2018/03/20 15:01:12;0;A;ELS-95 Diagn.;6;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0, Poziom F2: 0 
+Status A ?:  
+STS:;;;;
+2018/03/20 15:01:12;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 15:01:48;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 15:01:49;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 15:01:49;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 15:15:54;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/20 15:16:00;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/20 15:16:12;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 15:16:12;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 15:16:59;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/20 15:17:05;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/20 15:41:59;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 15:41:59;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/20 16:16:38;0;A;Alarm;7;Usterka modułu EOD;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/20 16:16:38;0;A;Alarm;14;Rezerwa;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 07:35:45;0;A;Alarm;7;Usterka modułu EOD;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 07:35:45;0;A;Alarm;14;Rezerwa;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 07:35:54;0;A;Alarm;14;Rezerwa;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 07:35:56;0;A;Alarm;14;Rezerwa;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 15:07:42;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:07:48;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:07:54;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:07:54;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:08:14;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:09:16;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:10:06;0;A;Alarm;9;Zagrożenie pożarem;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 15:23:02;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 15:23:02;0;A;ELS-95 Diagn.;1;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:02;0;A;ELS-95 Diagn.;2;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:02;0;A;ELS-95 Diagn.;3;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:02;0;A;ELS-95 Diagn.;4;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:02;0;A;ELS-95 Diagn.;5;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:02;0;A;ELS-95 Diagn.;6;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:02;0;A;ELS-95 Diagn.;7;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:02;0;A;ELS-95 Diagn.;8;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0,6, Poziom F2: 0,6 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:52;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 15:23:52;0;A;Alarm;51;Amber road signals hardware failure;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 15:23:52;0;A;Alarm;60;Not Recognized event;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 15:23:52;0;A;Alarm;61;Not Recognized event;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 15:23:53;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:23:53;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:24:26;0;A;Alarm;51;Amber road signals hardware failure;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 15:24:42;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:24:48;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:24:48;0;A;Wersja oprogramowania;;M2018/0332#00;;;;
+2018/03/21 15:25:10;0;A;Alarm;60;Not Recognized event;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 15:25:18;0;A;Alarm;61;Not Recognized event;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 15:26:21;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:26:21;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:33:32;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:33:38;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:36:19;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 15:36:51;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 15:36:52;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:36:52;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:37:14;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:37:24;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:37:35;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:37:35;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:40:24;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:40:38;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 16:43:33;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 16:44:12;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 16:44:14;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 16:44:14;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 16:46:25;0;A;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 4, Err Num 156 
+ Mod Num 9, Err Num 166 
+ Mod Num 11, Err Num 154 ;;;;
+2018/03/21 16:46:25;0;A;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 15, Err Num 154 
+ Mod Num 16, Err Num 158 ;;;;
+2018/03/21 16:53:39;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 16:54:39;0;A;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 196 ;;;;
+2018/03/21 16:56:22;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 16:56:57;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 16:56:59;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 16:56:59;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 16:57:08;0;A;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 16, Err Num 154 ;;;;
+2018/03/21 17:00:10;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:00:46;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 17:00:48;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:00:48;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:00:58;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:01:25;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:01:37;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:01:37;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:01:37;0;A;Wersja oprogramowania;;M2018/0332#00;;;;
+2018/03/21 17:02:01;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:02:11;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:11:09;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:11:44;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 17:11:45;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:11:45;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:11:54;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:12:00;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:19:37;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:21:25;0;A;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:21:58;0;A;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 17:22:00;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:22:00;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:22:10;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:22:16;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:30:51;0;A;Alarm;7;Usterka modułu EOD;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 17:30:51;0;A;Alarm;14;Rezerwa;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/22 08:14:19;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/22 08:14:19;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/22 08:19:41;0;A;Alarm;7;Usterka modułu EOD;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/22 08:19:41;0;A;Alarm;14;Rezerwa;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/22 09:50:09;0;A;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/22 09:50:15;0;A;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/22 09:50:54;0;A;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/22 09:50:54;0;A;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/22 09:50:58;0;A;Alarm;9;Zagrożenie pożarem;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 07:35:54;0;B;Wersja oprogramowania;;M2017/0421#00  ;;;;
+2018/03/21 07:35:55;0;B;Alarm;14;Rezerwa;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 07:35:55;0;B;Zdarzenie;2;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 11:51:23;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 11:51:23;0;B;Zdarzenie;8;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 11:51:23;0;B;Zdarzenie;16;train detectors in track 1 are switched on/Tor 1 aktywny;Zdarzenie aktywne!;;0;
+2018/03/21 11:51:23;0;B;Zdarzenie;20;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 11:51:41;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 11:51:41;0;B;Zdarzenie;16;train detectors in track 1 are switched on/Tor 1 aktywny;Zdarzenie nie aktywne;;0;
+2018/03/21 11:51:41;0;B;Zdarzenie;20;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 11:51:45;0;B;Zdarzenie;8;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 13:45:27;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 13:45:48;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 13:46:45;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 13:47:01;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 13:47:01;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 13:47:01;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:07:42;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:07:48;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:07:48;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:07:53;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:07:53;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:07:53;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:07:54;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:08:09;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:08:14;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:08:32;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:08:59;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:09:02;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:09:02;0;B;Zdarzenie;8;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:09:02;0;B;Zdarzenie;16;train detectors in track 1 are switched on/Tor 1 aktywny;Zdarzenie aktywne!;;0;
+2018/03/21 15:09:02;0;B;Zdarzenie;20;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:09:16;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:09:16;0;B;Zdarzenie;16;train detectors in track 1 are switched on/Tor 1 aktywny;Zdarzenie nie aktywne;;0;
+2018/03/21 15:09:16;0;B;Zdarzenie;20;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:09:16;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:09:16;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:09:20;0;B;Zdarzenie;8;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:09:24;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:09:24;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:10:00;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:10:00;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:10:05;0;B;Alarm;9;Zagrożenie pożarem;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 15:10:05;0;B;Wersja oprogramowania;;M2017/0421#00  ;;;;
+2018/03/21 15:10:06;0;B;Zdarzenie;2;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:23:32;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 15:23:51;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 15:23:54;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:23:54;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:23:54;0;B;Alarm;51;Amber road signals hardware failure;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 15:23:54;0;B;Alarm;60;Not Recognized event;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 15:23:54;0;B;Alarm;61;Not Recognized event;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 15:23:54;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:23:54;0;B;Zdarzenie;2;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:23:54;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:23:54;0;B;Zdarzenie;4;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:23:54;0;B;Zdarzenie;5;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:23:54;0;B;Zdarzenie;8;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:23:54;0;B;Zdarzenie;9;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:23:54;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:23:54;0;B;ELS-95 Diagn.;1;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0, Poziom F2: 0 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:54;0;B;ELS-95 Diagn.;2;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0, Poziom F2: 0 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:54;0;B;ELS-95 Diagn.;3;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0, Poziom F2: 0 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:54;0;B;ELS-95 Diagn.;4;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0, Poziom F2: 0 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:54;0;B;ELS-95 Diagn.;5;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0, Poziom F2: 0 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:54;0;B;ELS-95 Diagn.;6;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0, Poziom F2: 0 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:54;0;B;ELS-95 Diagn.;7;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0, Poziom F2: 0 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:23:54;0;B;ELS-95 Diagn.;8;Stan czujnika koła: Usterka transmisji 
+Poziom F1: 0, Poziom F2: 0 
+Status A ?:  
+STS:;;;;
+2018/03/21 15:24:25;0;B;Alarm;51;Amber road signals hardware failure;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 15:24:41;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:24:47;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:24:47;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:25:09;0;B;Alarm;60;Not Recognized event;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 15:25:09;0;B;Zdarzenie;4;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:25:13;0;B;Zdarzenie;8;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:25:17;0;B;Alarm;61;Not Recognized event;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/21 15:25:17;0;B;Zdarzenie;5;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:25:18;0;B;Zdarzenie;2;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:25:21;0;B;Zdarzenie;9;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:25:29;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:25:29;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:25:39;0;B;Zdarzenie;4;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:25:45;0;B;Zdarzenie;5;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:26:19;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:26:19;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:26:20;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:26:20;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:26:21;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:33:32;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:33:38;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:33:38;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:33:46;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:33:46;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:34:12;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:34:12;0;B;Wersja oprogramowania;;M2017/0421#00  ;;;;
+2018/03/21 15:34:12;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:34:40;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:34:40;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:34:54;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:34:54;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:35:14;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:35:14;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:35:28;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:35:28;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:36:49;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 15:36:50;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 15:36:53;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:36:53;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:36:53;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:36:53;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:36:53;0;B;Zdarzenie;4;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:36:53;0;B;Zdarzenie;5;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:36:53;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:37:14;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:37:24;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:37:25;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:37:36;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:37:36;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 15:37:36;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 15:37:36;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:37:36;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 15:40:25;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:40:39;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 15:40:39;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 16:41:49;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/21 16:44:07;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 16:44:11;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 16:44:14;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 16:44:14;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 16:44:14;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:44:14;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:44:14;0;B;Zdarzenie;4;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:44:14;0;B;Zdarzenie;5;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:44:14;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:46:24;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/21 16:54:13;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 16:54:38;0;B;SPA-5 Mode;;Mode: 2-Diag ;;;;
+2018/03/21 16:56:52;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 16:56:52;0;B;Wersja oprogramowania;;M2017/0421#00  ;;;;
+2018/03/21 16:56:56;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 16:56:59;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 16:56:59;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 16:56:59;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:56:59;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:56:59;0;B;Zdarzenie;4;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:56:59;0;B;Zdarzenie;5;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:56:59;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 16:57:07;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 16:57:07;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/21 17:00:44;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:00:45;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 17:00:48;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:00:48;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:00:48;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:00:48;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:00:48;0;B;Zdarzenie;4;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:00:48;0;B;Zdarzenie;5;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:00:48;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:00:57;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:01:05;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:01:21;0;B;Zdarzenie;15;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:01:26;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:01:26;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:01:37;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:01:37;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:01:37;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:01:40;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:01:40;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:02:02;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:02:12;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:02:12;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:02:37;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:02:38;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:03:02;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:03:02;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:03:17;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:03:18;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:03:34;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:03:34;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:11:39;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:11:43;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 17:11:46;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:11:46;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:11:46;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:11:46;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:11:46;0;B;Zdarzenie;4;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:11:46;0;B;Zdarzenie;5;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:11:46;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:11:46;0;B;Wersja oprogramowania;;M2017/0421#00  ;;;;
+2018/03/21 17:11:54;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:12:00;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:12:01;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:12:13;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:12:13;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:12:29;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:12:29;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:12:45;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:12:45;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:13:52;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/21 17:21:54;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:21:56;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 17:21:59;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:21:59;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/21 17:21:59;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:21:59;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:21:59;0;B;Zdarzenie;4;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:21:59;0;B;Zdarzenie;5;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:21:59;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:22:09;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:22:15;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/21 17:22:15;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:22:25;0;B;Zdarzenie;14;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:22:25;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:22:39;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:22:39;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/21 17:22:55;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:22:56;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/21 17:30:49;0;B;Alarm;7;Usterka modułu EOD;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 17:30:49;0;B;Alarm;14;Rezerwa;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/21 17:30:50;0;B;Zdarzenie;2;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/22 04:00:01;0;B;Zdarzenie;32;general engagement;Zdarzenie aktywne!;;0;
+2018/03/22 04:00:01;0;B;Zdarzenie;32;general engagement;Zdarzenie nie aktywne;;0;
+2018/03/22 08:14:19;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/22 08:14:19;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/22 08:14:19;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/22 08:19:41;0;B;Alarm;7;Usterka modułu EOD;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/22 08:19:41;0;B;Alarm;14;Rezerwa;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/22 08:19:41;0;B;Zdarzenie;2;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/22 08:19:41;0;B;Wersja oprogramowania;;M2017/0421#00  ;;;;
+2018/03/22 09:50:08;0;B;Alarm;26;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/22 09:50:14;0;B;Alarm;44;Not Recognized event;Alarm nie aktywny;Druga kategoria;0;
+2018/03/22 09:50:15;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/22 09:50:52;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/22 09:50:52;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/22 09:50:54;0;B;Alarm;26;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/22 09:50:54;0;B;Alarm;44;Not Recognized event;Alarm aktywny!;Druga kategoria;0;
+2018/03/22 09:50:54;0;B;Zdarzenie;3;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/22 09:50:57;0;B;Alarm;9;Zagrożenie pożarem;Alarm aktywny!;Pierwsza kategoria;0;
+2018/03/22 09:50:58;0;B;Zdarzenie;2;Not Recognized event;Zdarzenie aktywne!;;0;
+2018/03/22 10:22:03;0;B;Alarm;9;Zagrożenie pożarem;Alarm nie aktywny;Pierwsza kategoria;0;
+2018/03/22 10:22:03;0;B;Zdarzenie;0;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/22 10:22:03;0;B;Zdarzenie;13;Not Recognized event;Zdarzenie nie aktywne;;0;
+2018/03/22 10:22:03;0;B;Zdarzenie;2;Not Recognized event;Zdarzenie nie aktywne;;0;
+2000/01/01 02:56:33;0;B;Wersja oprogramowania;;M2017/0421#00  ;;;;
+2000/01/01 02:56:33;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2000/01/01 02:56:53;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2000/01/01 03:16:12;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 12, Err Num 196 ;;;;
+2018/03/16 12:38:23;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 12, Err Num 196 ;;;;
+2018/03/16 12:42:08;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/16 12:42:27;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/16 12:42:27;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 15, Err Num 117 ;;;;
+2018/03/16 12:54:13;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/16 12:54:29;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/16 15:01:05;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/19 09:14:16;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/19 09:14:36;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/19 14:16:13;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/19 14:19:41;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/19 14:20:00;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/19 14:25:09;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/20 08:17:08;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 08:18:08;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 113 ;;;;
+2018/03/20 08:41:53;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 08:42:53;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 113 ;;;;
+2018/03/20 08:46:31;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 08:46:49;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 08:56:42;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/20 09:14:12;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 09:14:33;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 09:24:04;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 09:24:24;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 09:40:25;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/20 09:44:44;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 09:45:02;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 09:59:50;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/20 09:59:50;0;B;Wersja oprogramowania;;M2017/0421#00  ;;;;
+2018/03/20 10:05:59;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 10:06:18;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 14:51:55;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 14:51:59;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/20 15:00:39;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/20 15:01:45;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/20 15:01:47;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 15:23:31;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 15:23:51;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 15:36:48;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 15:36:50;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 16:41:49;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/21 16:44:07;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 16:44:11;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 16:46:24;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/21 16:54:13;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 16:54:38;0;B;SPA-5 Mode;;Mode: 2-Diag ;;;;
+2018/03/21 16:56:52;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 16:56:56;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 16:57:07;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/21 17:00:43;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:00:45;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 17:11:39;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:11:43;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;
+2018/03/21 17:13:52;0;B;SPA-5 Mode;;Mode: 2-Diag 
+ Mod Num 1, Err Num 123 ;;;;
+2018/03/21 17:20:07;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:21:54;0;B;SPA-5 Mode;;Mode: 1-Start ;;;;
+2018/03/21 17:21:56;0;B;SPA-5 Mode;;Mode: 8-Active ;;;;

@@ -1924,6 +1924,141 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error Nr 1.
+        /// </summary>
+        internal static string EheErrNr1 {
+            get {
+                return ResourceManager.GetString("EheErrNr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error Nr 2.
+        /// </summary>
+        internal static string EheErrNr2 {
+            get {
+                return ResourceManager.GetString("EheErrNr2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error Nr 3.
+        /// </summary>
+        internal static string EheErrNr3 {
+            get {
+                return ResourceManager.GetString("EheErrNr3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error Nr 4.
+        /// </summary>
+        internal static string EheErrNr4 {
+            get {
+                return ResourceManager.GetString("EheErrNr4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Measured FS1.
+        /// </summary>
+        internal static string EheFs1 {
+            get {
+                return ResourceManager.GetString("EheFs1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reverence FS1.
+        /// </summary>
+        internal static string EheFs1Sample {
+            get {
+                return ResourceManager.GetString("EheFs1Sample", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Measured  FS2.
+        /// </summary>
+        internal static string EheFs2 {
+            get {
+                return ResourceManager.GetString("EheFs2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reverence FS2.
+        /// </summary>
+        internal static string EheFs2Sample {
+            get {
+                return ResourceManager.GetString("EheFs2Sample", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Measured  FS3.
+        /// </summary>
+        internal static string EheFs3 {
+            get {
+                return ResourceManager.GetString("EheFs3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reverence FS3.
+        /// </summary>
+        internal static string EheFs3Sample {
+            get {
+                return ResourceManager.GetString("EheFs3Sample", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Led current.
+        /// </summary>
+        internal static string EheILed {
+            get {
+                return ResourceManager.GetString("EheILed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PDM Software version.
+        /// </summary>
+        internal static string EhePDM {
+            get {
+                return ResourceManager.GetString("EhePDM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temperature.
+        /// </summary>
+        internal static string EheTemp {
+            get {
+                return ResourceManager.GetString("EheTemp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Led voltage.
+        /// </summary>
+        internal static string EheULed {
+            get {
+                return ResourceManager.GetString("EheULed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supply voltage.
+        /// </summary>
+        internal static string EheZpr {
+            get {
+                return ResourceManager.GetString("EheZpr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to System works in automatic mode.
         /// </summary>
         internal static string event10 {
@@ -3549,6 +3684,186 @@ namespace SPA5BlackBoxReader {
         internal static string mode8 {
             get {
                 return ResourceManager.GetString("mode8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ELS-95 Diagn..
+        /// </summary>
+        internal static string WDDiagn {
+            get {
+                return ResourceManager.GetString("WDDiagn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ADC Error.
+        /// </summary>
+        internal static string WDErrorAdc {
+            get {
+                return ResourceManager.GetString("WDErrorAdc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adjust Error.
+        /// </summary>
+        internal static string WDErrorAdjust {
+            get {
+                return ResourceManager.GetString("WDErrorAdjust", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto-test Error.
+        /// </summary>
+        internal static string WDErrorAutoTest {
+            get {
+                return ResourceManager.GetString("WDErrorAutoTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disturbance.
+        /// </summary>
+        internal static string WDErrorDisturbance {
+            get {
+                return ResourceManager.GetString("WDErrorDisturbance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Error.
+        /// </summary>
+        internal static string WDErrorLevel {
+            get {
+                return ResourceManager.GetString("WDErrorLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sequence Error.
+        /// </summary>
+        internal static string WDErrorSequence {
+            get {
+                return ResourceManager.GetString("WDErrorSequence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to F1 Level.
+        /// </summary>
+        internal static string WDF1Level {
+            get {
+                return ResourceManager.GetString("WDF1Level", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to F2 Level.
+        /// </summary>
+        internal static string WDF2Level {
+            get {
+                return ResourceManager.GetString("WDF2Level", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WD state.
+        /// </summary>
+        internal static string WDStatus {
+            get {
+                return ResourceManager.GetString("WDStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hardware fault.
+        /// </summary>
+        internal static string WDStatusHWFault {
+            get {
+                return ResourceManager.GetString("WDStatusHWFault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No fault.
+        /// </summary>
+        internal static string WDStatusNoFault {
+            get {
+                return ResourceManager.GetString("WDStatusNoFault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not recognized fault.
+        /// </summary>
+        internal static string WDStatusNotRecogn {
+            get {
+                return ResourceManager.GetString("WDStatusNotRecogn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Transmission fault.
+        /// </summary>
+        internal static string WDStatusTransFault {
+            get {
+                return ResourceManager.GetString("WDStatusTransFault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hardware or software critical failure.
+        /// </summary>
+        internal static string WDStsCriticalErrHwSw {
+            get {
+                return ResourceManager.GetString("WDStsCriticalErrHwSw", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Critical error-two axles difference between channels A/M (BKP).
+        /// </summary>
+        internal static string WDStsCriticalError {
+            get {
+                return ResourceManager.GetString("WDStsCriticalError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Head occupied (BP).
+        /// </summary>
+        internal static string WDStsHeadOccupied {
+            get {
+                return ResourceManager.GetString("WDStsHeadOccupied", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Init Mode of electronics (TI).
+        /// </summary>
+        internal static string WDStsMode {
+            get {
+                return ResourceManager.GetString("WDStsMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string WDStsOK {
+            get {
+                return ResourceManager.GetString("WDStsOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Permission for order sending (ZAP).
+        /// </summary>
+        internal static string WDStsSendingPermition {
+            get {
+                return ResourceManager.GetString("WDStsSendingPermition", resourceCulture);
             }
         }
     }

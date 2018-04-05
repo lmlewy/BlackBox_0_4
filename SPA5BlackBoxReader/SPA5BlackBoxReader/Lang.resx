@@ -1281,4 +1281,109 @@
   <data name="labelType" xml:space="preserve">
     <value>Type</value>
   </data>
+  <data name="EheErrNr1" xml:space="preserve">
+    <value>Error Nr 1</value>
+  </data>
+  <data name="EheErrNr2" xml:space="preserve">
+    <value>Error Nr 2</value>
+  </data>
+  <data name="EheErrNr3" xml:space="preserve">
+    <value>Error Nr 3</value>
+  </data>
+  <data name="EheErrNr4" xml:space="preserve">
+    <value>Error Nr 4</value>
+  </data>
+  <data name="EheFs1" xml:space="preserve">
+    <value>Measured FS1</value>
+  </data>
+  <data name="EheFs1Sample" xml:space="preserve">
+    <value>Reverence FS1</value>
+  </data>
+  <data name="EheFs2" xml:space="preserve">
+    <value>Measured  FS2</value>
+  </data>
+  <data name="EheFs2Sample" xml:space="preserve">
+    <value>Reverence FS2</value>
+  </data>
+  <data name="EheFs3" xml:space="preserve">
+    <value>Measured  FS3</value>
+  </data>
+  <data name="EheFs3Sample" xml:space="preserve">
+    <value>Reverence FS3</value>
+  </data>
+  <data name="EheILed" xml:space="preserve">
+    <value>Led current</value>
+  </data>
+  <data name="EhePDM" xml:space="preserve">
+    <value>PDM Software version</value>
+  </data>
+  <data name="EheTemp" xml:space="preserve">
+    <value>Temperature</value>
+  </data>
+  <data name="EheULed" xml:space="preserve">
+    <value>Led voltage</value>
+  </data>
+  <data name="EheZpr" xml:space="preserve">
+    <value>Supply voltage</value>
+  </data>
+  <data name="WDDiagn" xml:space="preserve">
+    <value>ELS-95 Diagn.</value>
+  </data>
+  <data name="WDErrorAdc" xml:space="preserve">
+    <value>ADC Error</value>
+  </data>
+  <data name="WDErrorAdjust" xml:space="preserve">
+    <value>Adjust Error</value>
+  </data>
+  <data name="WDErrorAutoTest" xml:space="preserve">
+    <value>Auto-test Error</value>
+  </data>
+  <data name="WDErrorDisturbance" xml:space="preserve">
+    <value>Disturbance</value>
+  </data>
+  <data name="WDErrorLevel" xml:space="preserve">
+    <value>Level Error</value>
+  </data>
+  <data name="WDErrorSequence" xml:space="preserve">
+    <value>Sequence Error</value>
+  </data>
+  <data name="WDF1Level" xml:space="preserve">
+    <value>F1 Level</value>
+  </data>
+  <data name="WDF2Level" xml:space="preserve">
+    <value>F2 Level</value>
+  </data>
+  <data name="WDStatus" xml:space="preserve">
+    <value>WD state</value>
+  </data>
+  <data name="WDStatusHWFault" xml:space="preserve">
+    <value>Hardware fault</value>
+  </data>
+  <data name="WDStatusNoFault" xml:space="preserve">
+    <value>No fault</value>
+  </data>
+  <data name="WDStatusNotRecogn" xml:space="preserve">
+    <value>Not recognized fault</value>
+  </data>
+  <data name="WDStatusTransFault" xml:space="preserve">
+    <value>Transmission fault</value>
+  </data>
+  <data name="WDStsCriticalErrHwSw" xml:space="preserve">
+    <value>Hardware or software critical failure</value>
+  </data>
+  <data name="WDStsCriticalError" xml:space="preserve">
+    <value>Critical error-two axles difference between channels A/M (BKP)</value>
+  </data>
+  <data name="WDStsHeadOccupied" xml:space="preserve">
+    <value>Head occupied (BP)</value>
+  </data>
+  <data name="WDStsMode" xml:space="preserve">
+    <value>Init Mode of electronics (TI)</value>
+  </data>
+  <data name="WDStsOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="WDStsSendingPermition" xml:space="preserve">
+    <value>Permission for order sending (ZAP)</value>
+  </data>
 </root>
