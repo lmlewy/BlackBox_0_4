@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -60,6 +60,7 @@
             this.tabPageBin = new System.Windows.Forms.TabPage();
             this.richTextBoxBin = new System.Windows.Forms.RichTextBox();
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.label1 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabPageDecEventTable.SuspendLayout();
@@ -74,7 +75,7 @@
             this.toolStripProgressBar});
             this.statusStrip1.Location = new System.Drawing.Point(0, 479);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(974, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1014, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -91,7 +92,7 @@
             this.labelInfoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(974, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1014, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -143,7 +144,7 @@
             // 
             this.polskiToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("polskiToolStripMenuItem.Image")));
             this.polskiToolStripMenuItem.Name = "polskiToolStripMenuItem";
-            this.polskiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.polskiToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.polskiToolStripMenuItem.Text = "Polski";
             this.polskiToolStripMenuItem.Click += new System.EventHandler(this.polskiToolStripMenuItem_Click);
             // 
@@ -151,7 +152,7 @@
             // 
             this.englishToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("englishToolStripMenuItem.Image")));
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
@@ -167,6 +168,7 @@
             this.labelSaveSelectedToolStripMenuItem.Name = "labelSaveSelectedToolStripMenuItem";
             this.labelSaveSelectedToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.labelSaveSelectedToolStripMenuItem.Text = "LabelSaveSelected";
+            this.labelSaveSelectedToolStripMenuItem.Click += new System.EventHandler(this.labelSaveSelectedToolStripMenuItem_Click);
             // 
             // labelCloseToolStripMenuItem
             // 
@@ -188,9 +190,11 @@
             this.labelAboutProgToolStripMenuItem.Name = "labelAboutProgToolStripMenuItem";
             this.labelAboutProgToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.labelAboutProgToolStripMenuItem.Text = "labelAboutProg";
+            this.labelAboutProgToolStripMenuItem.Click += new System.EventHandler(this.labelAboutProgToolStripMenuItem_Click);
             // 
             // tabPageDecEventTable
             // 
+            this.tabPageDecEventTable.Controls.Add(this.label1);
             this.tabPageDecEventTable.Controls.Add(this.comboBoxNumber);
             this.tabPageDecEventTable.Controls.Add(this.dateTimePickerTo);
             this.tabPageDecEventTable.Controls.Add(this.dateTimePickerFrom);
@@ -205,7 +209,7 @@
             this.tabPageDecEventTable.Location = new System.Drawing.Point(4, 22);
             this.tabPageDecEventTable.Name = "tabPageDecEventTable";
             this.tabPageDecEventTable.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDecEventTable.Size = new System.Drawing.Size(951, 423);
+            this.tabPageDecEventTable.Size = new System.Drawing.Size(991, 423);
             this.tabPageDecEventTable.TabIndex = 2;
             this.tabPageDecEventTable.Text = "tabPageDecEventTable";
             this.tabPageDecEventTable.UseVisualStyleBackColor = true;
@@ -214,7 +218,7 @@
             // 
             this.comboBoxNumber.DropDownWidth = 60;
             this.comboBoxNumber.FormattingEnabled = true;
-            this.comboBoxNumber.Location = new System.Drawing.Point(389, 32);
+            this.comboBoxNumber.Location = new System.Drawing.Point(429, 32);
             this.comboBoxNumber.Name = "comboBoxNumber";
             this.comboBoxNumber.Size = new System.Drawing.Size(60, 21);
             this.comboBoxNumber.TabIndex = 10;
@@ -246,7 +250,7 @@
             // 
             this.comboBoxGroup.DropDownWidth = 110;
             this.comboBoxGroup.FormattingEnabled = true;
-            this.comboBoxGroup.Location = new System.Drawing.Point(869, 32);
+            this.comboBoxGroup.Location = new System.Drawing.Point(909, 32);
             this.comboBoxGroup.Name = "comboBoxGroup";
             this.comboBoxGroup.Size = new System.Drawing.Size(69, 21);
             this.comboBoxGroup.TabIndex = 7;
@@ -256,7 +260,7 @@
             // 
             this.comboBoxCategory.DropDownWidth = 110;
             this.comboBoxCategory.FormattingEnabled = true;
-            this.comboBoxCategory.Location = new System.Drawing.Point(759, 32);
+            this.comboBoxCategory.Location = new System.Drawing.Point(799, 32);
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(110, 21);
             this.comboBoxCategory.TabIndex = 6;
@@ -266,7 +270,7 @@
             // 
             this.comboBoxStatus.DropDownWidth = 110;
             this.comboBoxStatus.FormattingEnabled = true;
-            this.comboBoxStatus.Location = new System.Drawing.Point(649, 32);
+            this.comboBoxStatus.Location = new System.Drawing.Point(689, 32);
             this.comboBoxStatus.Name = "comboBoxStatus";
             this.comboBoxStatus.Size = new System.Drawing.Size(109, 21);
             this.comboBoxStatus.TabIndex = 5;
@@ -276,7 +280,7 @@
             // 
             this.comboBoxMessageText.DropDownWidth = 110;
             this.comboBoxMessageText.FormattingEnabled = true;
-            this.comboBoxMessageText.Location = new System.Drawing.Point(449, 32);
+            this.comboBoxMessageText.Location = new System.Drawing.Point(489, 32);
             this.comboBoxMessageText.Name = "comboBoxMessageText";
             this.comboBoxMessageText.Size = new System.Drawing.Size(199, 21);
             this.comboBoxMessageText.TabIndex = 4;
@@ -286,7 +290,7 @@
             // 
             this.comboBoxEvAl.DropDownWidth = 90;
             this.comboBoxEvAl.FormattingEnabled = true;
-            this.comboBoxEvAl.Location = new System.Drawing.Point(299, 32);
+            this.comboBoxEvAl.Location = new System.Drawing.Point(339, 32);
             this.comboBoxEvAl.Name = "comboBoxEvAl";
             this.comboBoxEvAl.Size = new System.Drawing.Size(90, 21);
             this.comboBoxEvAl.TabIndex = 3;
@@ -296,7 +300,7 @@
             // 
             this.comboBoxLxChannel.DropDownWidth = 60;
             this.comboBoxLxChannel.FormattingEnabled = true;
-            this.comboBoxLxChannel.Location = new System.Drawing.Point(238, 32);
+            this.comboBoxLxChannel.Location = new System.Drawing.Point(278, 32);
             this.comboBoxLxChannel.Name = "comboBoxLxChannel";
             this.comboBoxLxChannel.Size = new System.Drawing.Size(60, 21);
             this.comboBoxLxChannel.TabIndex = 2;
@@ -305,7 +309,7 @@
             // comboBoxLxNumber
             // 
             this.comboBoxLxNumber.FormattingEnabled = true;
-            this.comboBoxLxNumber.Location = new System.Drawing.Point(177, 32);
+            this.comboBoxLxNumber.Location = new System.Drawing.Point(217, 32);
             this.comboBoxLxNumber.Name = "comboBoxLxNumber";
             this.comboBoxLxNumber.Size = new System.Drawing.Size(60, 21);
             this.comboBoxLxNumber.TabIndex = 1;
@@ -318,18 +322,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewEventsAndAlarms.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dataGridViewEventsAndAlarms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewEventsAndAlarms.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewEventsAndAlarms.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewEventsAndAlarms.Location = new System.Drawing.Point(6, 57);
             this.dataGridViewEventsAndAlarms.Name = "dataGridViewEventsAndAlarms";
             this.dataGridViewEventsAndAlarms.RowTemplate.Height = 30;
-            this.dataGridViewEventsAndAlarms.Size = new System.Drawing.Size(939, 333);
+            this.dataGridViewEventsAndAlarms.Size = new System.Drawing.Size(979, 333);
             this.dataGridViewEventsAndAlarms.TabIndex = 0;
             this.dataGridViewEventsAndAlarms.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridViewEventsAndAlarms_DataBindingComplete);
             // 
@@ -365,14 +369,23 @@
             this.tabControl.Location = new System.Drawing.Point(12, 27);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(959, 449);
+            this.tabControl.Size = new System.Drawing.Size(999, 449);
             this.tabControl.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(190, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "->";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 501);
+            this.ClientSize = new System.Drawing.Size(1014, 501);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -385,6 +398,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabPageDecEventTable.ResumeLayout(false);
+            this.tabPageDecEventTable.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEventsAndAlarms)).EndInit();
             this.tabPageBin.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
@@ -425,6 +439,7 @@
         private System.Windows.Forms.ToolStripMenuItem labelSaveAllToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem labelSaveSelectedToolStripMenuItem;
         private System.Windows.Forms.ComboBox comboBoxNumber;
+        private System.Windows.Forms.Label label1;
     }
 }
 

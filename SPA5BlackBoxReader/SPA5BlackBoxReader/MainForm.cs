@@ -232,6 +232,7 @@ namespace SPA5BlackBoxReader
             table = null;
             table = new DataTable();
             table.Columns.Add(resmgr.GetString("labelTime", ci), typeof(string)) ;
+            table.Columns.Add(resmgr.GetString("labelTicks", ci), typeof(string));
             table.Columns.Add(resmgr.GetString("labelLxNumber", ci), typeof(string));
             table.Columns.Add(resmgr.GetString("labelChannel", ci), typeof(string));
             table.Columns.Add(resmgr.GetString("labelType", ci), typeof(string));
@@ -366,26 +367,29 @@ namespace SPA5BlackBoxReader
                 column.Width = 130;
                 column.Resizable = DataGridViewTriState.False;
                 column = dataGridViewEventsAndAlarms.Columns[1];
-                column.Width = 60;
+                column.Width = 40;
                 column.Resizable = DataGridViewTriState.False;
                 column = dataGridViewEventsAndAlarms.Columns[2];
                 column.Width = 60;
                 column.Resizable = DataGridViewTriState.False;
                 column = dataGridViewEventsAndAlarms.Columns[3];
-                column.Width = 90;
-                column.Resizable = DataGridViewTriState.False;
-                column = dataGridViewEventsAndAlarms.Columns[4];
                 column.Width = 60;
                 column.Resizable = DataGridViewTriState.False;
-                column = dataGridViewEventsAndAlarms.Columns[5];
-                column.Width = 200;
-                column = dataGridViewEventsAndAlarms.Columns[6];
-                column.Width = 110;
+                column = dataGridViewEventsAndAlarms.Columns[4];
+                column.Width = 90;
                 column.Resizable = DataGridViewTriState.False;
+                column = dataGridViewEventsAndAlarms.Columns[5];
+                column.Width = 60;
+                column.Resizable = DataGridViewTriState.False;
+                column = dataGridViewEventsAndAlarms.Columns[6];
+                column.Width = 200;
                 column = dataGridViewEventsAndAlarms.Columns[7];
                 column.Width = 110;
                 column.Resizable = DataGridViewTriState.False;
                 column = dataGridViewEventsAndAlarms.Columns[8];
+                column.Width = 110;
+                column.Resizable = DataGridViewTriState.False;
+                column = dataGridViewEventsAndAlarms.Columns[9];
                 column.Width = 70;
                 column.Resizable = DataGridViewTriState.False;
             }
@@ -430,6 +434,46 @@ namespace SPA5BlackBoxReader
 
         }
 
+
+        private void labelSaveSelectedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var saveFileDialog1 = new SaveFileDialog();
+            var iResult = DialogResult;
+
+            saveFileDialog1.FileName = "unknown.csv"; // jako csv
+            string filter = "CSV file (*.csv)|*.csv| All Files (*.*)|*.*";
+            saveFileDialog1.Filter = filter;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                using (StreamWriter sw = new StreamWriter(saveFileDialog1.FileName))
+                {
+                    foreach (DataGridViewRow row in dataGridViewEventsAndAlarms.Rows)
+                    {
+                        if (row.IsNewRow) continue;
+                        string linia = null;
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            string cellValue = cell.Value.ToString();
+                            if (cell.Value.ToString().Contains("\n") == true)
+                            {
+                                linia += "\"" + cell.Value.ToString() + ";\"";
+                            }
+                            else
+                            {
+                                linia += cell.Value.ToString() + ";";
+                            }
+                        }
+                        sw.WriteLine(linia);
+                    }
+
+                    sw.Close();
+                }
+            }
+
+        }
+
+        
         private void dataGridViewEventsAndAlarms_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             foreach (DataGridViewRow dgvr in dataGridViewEventsAndAlarms.Rows)
@@ -440,24 +484,24 @@ namespace SPA5BlackBoxReader
                     DataRow dr = drv.Row;
                     if (dr != null)
                     {
-                        if (dr[3].Equals("SPA-5 Mode"))
+                        if (dr[4].Equals("SPA-5 Mode"))
                         {
                             //dgvr.DefaultCellStyle.BackColor = System.Drawing.Color.Red;
                             dgvr.DefaultCellStyle.ForeColor = System.Drawing.Color.Orange;
                         }
-                        else if (dr[3].Equals("ELS-95 Diagn."))
+                        else if (dr[4].Equals("ELS-95 Diagn."))
                         {
                             dgvr.DefaultCellStyle.ForeColor = System.Drawing.Color.RoyalBlue;
                         }
-                        else if (dr[3].Equals("EHE-2 Diagn."))
+                        else if (dr[4].Equals("EHE-2 Diagn."))
                         {
                             dgvr.DefaultCellStyle.ForeColor = System.Drawing.Color.Purple;
                         }
-                        else if (dr[3].Equals(resmgr.GetString("LabelSoftVer", ci).ToString()))
+                        else if (dr[4].Equals(resmgr.GetString("LabelSoftVer", ci).ToString()))
                         {
                             dgvr.DefaultCellStyle.ForeColor = System.Drawing.Color.Green;
                         }
-                        else if (dr[6].Equals(resmgr.GetString("alertActive", ci).ToString()))
+                        else if (dr[7].Equals(resmgr.GetString("alertActive", ci).ToString()))
                         {
                             dgvr.DefaultCellStyle.ForeColor = System.Drawing.Color.Red;
                         }
@@ -545,6 +589,13 @@ namespace SPA5BlackBoxReader
             this.toolStripProgressBar.Value = e.ProgressPercentage;
             //updateDataGridViewEventsAndAlarms(table);
         }
+
+        private void labelAboutProgToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("zwsmlki\nBombardier Transportation (ZWUS) Sp z o.o.\n2018");
+        }
+
+
 
 
 

@@ -3643,6 +3643,15 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ticks.
+        /// </summary>
+        internal static string labelTicks {
+            get {
+                return ResourceManager.GetString("labelTicks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Time.
         /// </summary>
         internal static string labelTime {

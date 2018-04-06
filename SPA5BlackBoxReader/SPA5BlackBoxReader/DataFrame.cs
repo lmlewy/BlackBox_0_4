@@ -51,6 +51,7 @@ namespace SPA5BlackBoxReader
                         List<string> tempList = new List<string>();
 
                         tempList.Add(timeStamp.ToString(@"yyyy\/MM\/dd HH:mm:ss") );
+                        tempList.Add(timeStampTick.ToString());
                         tempList.Add(lxNumber.ToString());
                         tempList.Add(lxChannel.ToString());
                         tempList.AddRange(mess.DecodeMessageToList(byteMessage));
@@ -66,7 +67,7 @@ namespace SPA5BlackBoxReader
                 else if (blkType == 2)
                 {
                     byte[] byteMessage = new byte[blkLenght];
-                    string[] fileCont = new string[9];
+                    string[] fileCont = new string[10];
 
                     // to jest po staremu - bez klasy - działa
                     //string fileContent = null;
@@ -92,10 +93,11 @@ namespace SPA5BlackBoxReader
                     MessageFileDescr fileMessage = new MessageFileDescr();
 
                     fileCont[0] = timeStamp.ToString(@"yyyy\/MM\/dd HH:mm:ss");
-                    fileCont[1] = lxNumber.ToString();
-                    fileCont[2] = lxChannel.ToString();
-                    fileCont[3] = resmgr.GetString("LabelSoftVer", internalCI);
-                    fileCont[5] = fileMessage.Decode(byteMessage);
+                    fileCont[1] = timeStampTick.ToString();
+                    fileCont[2] = lxNumber.ToString();
+                    fileCont[3] = lxChannel.ToString();
+                    fileCont[4] = resmgr.GetString("LabelSoftVer", internalCI);
+                    fileCont[6] = fileMessage.Decode(byteMessage);
 
                     listOfMessages.Add(fileCont);
 
