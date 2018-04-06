@@ -409,29 +409,24 @@ namespace SPA5BlackBoxReader
                 {
                     foreach(DataRow row in table.Rows)
                     {
-                        //sw.WriteLine(row.ToString() );
-
                         string linia = null;
                         foreach (object item in row.ItemArray)
                         {
-                            //linia += item.ToString() + ";"; // to działa ale entery tworza nową linię w excelu
-                            
-                            //if (item.ToString(). )
-                            //{
-                            //}
-
-                            //linia += item.ToString().Replace("\r\n", "  ") + ";"; //\r\n=CR LF - to nie działa tak jak powinno
-                            linia += item.ToString().Replace(";", " ") + ";"; // to nie działa tak jak powinno
-
+                             if (item.ToString().Contains("\n") == true)
+                            {
+                                linia += "\"" + item.ToString() + ";\"";
+                            }
+                            else
+                            {
+                                linia += item.ToString() + ";";
+                            }
                         }
                         sw.WriteLine(linia);
                     }
 
-
                     sw.Close();
                 }
             }
-
 
         }
 
